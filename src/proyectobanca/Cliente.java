@@ -10,6 +10,16 @@ public class Cliente {
     private String nif;
     private double telefono;
 
+    /**
+     * Contrusctor, crea el objeto a partir de las variables que se le pasan
+     * @param idcliente el nr de cliente, esto es automatico
+     * @param nombre el nombre del cliente
+     * @param apellidos el apellido del cliente
+     * @param edad la edad del cliente
+     * @param direccion la direccion del cliente
+     * @param nif el nif del cliente
+     * @param telefono  el telefono del cliente
+     */
     public Cliente(int idcliente, String nombre, String apellidos, int edad, String direccion, String nif, double telefono) {
         this.idcliente = idcliente;
         this.nombre = nombre;
@@ -47,9 +57,12 @@ public class Cliente {
     public double getTelefono() {
         return telefono;
     }
-
+/**
+ * Devuelve las cuentas y el numero de los clientes sin mostrar el dinero
+ * @return string devuelve el id de la cuenta y del usuario.
+ */
     public String GetClientes() {
-        return "Cliente " + idcliente + " nombre " + nombre;
+        return "Cliente '" + idcliente + "' nombre '" + nombre + "'";
     }
 
 }
